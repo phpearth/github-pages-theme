@@ -1,0 +1,8 @@
+exclude:
+  - Makefile
+  - node_modules
+  - src
+  - webpack.config.js
+  - package-lock.json
+  - package.json
+  - LICENSE

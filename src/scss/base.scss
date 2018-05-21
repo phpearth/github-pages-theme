@@ -1,0 +1,288 @@
+body {
+  font-size: 17px;
+  counter-reset: h2menu 0 h3menu 0 h2 0;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.ui.menu {
+  font-size: 20px;
+}
+
+p, ul, ol, td, th {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  background-color: #f8f8f8;
+  padding: 0.2em 0.2em 1em 0.9em;
+  border-left: 8px solid #8892bf;
+  margin: 1.5em 0;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: "\1F5C8";
+  font-size: 50px;
+  line-height: 0.8em;
+  margin-right: .15em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.pe-content {
+  margin-top: 30px;
+  height: 100%
+}
+
+.pe-content a[href^="http://"]:not([href*="php.earth"]):after,
+.pe-content a[href^="https://"]:not([href*="php.earth"]):after {
+  content: "\00a0↗\00a0";
+  position: relative;
+  top: -5px;
+  font-size: 65%;
+  font-weight: bold;
+}
+
+.pe-content h1 {
+  counter-reset: h2 h3;
+}
+
+.pe-content h2 {
+  counter-reset: h3;
+}
+
+.pe-content h2::before {
+  counter-increment: h2;
+  content: counter(h2) ".\0000a0\0000a0\0000a0";
+}
+
+.pe-content h3::before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3) ".\0000a0\0000a0\0000a0";
+}
+
+.pe-info {
+  margin-bottom: 20px;
+}
+
+.pe-info .description {
+  text-align: center;
+}
+
+.pe-info .description .pe-text {
+  font-size: 85%;
+}
+
+.pe-sidebar-buttons {
+  text-align: center;
+}
+
+.pe-sidebar-buttons .ui.mini.labeled.button {
+  height: 25px;
+  margin-right: 5px;
+  color: rgba(0,0,0,.7);
+  position: relative;
+  top: 0px;
+}
+
+.pe-sidebar-buttons .ui.mini.basic.icon.button {
+  padding: 5px 10px 5px 5px;
+}
+
+.pe-sidebar-buttons .ui.mini.compact.basic.icon.button div {
+  height: 10px;
+  padding: 0;
+  color: rgba(0,0,0,.7);
+  font-weight: bold;
+}
+
+.pe-sidebar-buttons .ui.mini.labeled.button div.ui.mini.basic.left.pointing.label {
+  color: rgba(0,0,0,.5);
+}
+
+.pe-sidebar-buttons .ui.mini.compact.basic.icon.button.pe-icon {
+  padding: 4px 10px 4px 5px;
+  position: relative;
+  top: -3px;
+}
+
+.pe-team {
+  font-size: 14px;
+  line-height: initial;
+}
+
+.pe-body {
+  margin: 25px 0 35px 0;
+}
+
+.pe-center {
+  text-align: center;
+}
+
+.pe-ieee {
+  width: 22px;
+}
+
+.ui.menu .item>img.pe-logo:not(.ui) {
+  margin-right: 10px;
+  height: 52px;
+  width: 43px;
+}
+
+.pe-logo-title {
+  color: #8892bf;
+}
+
+.pe-clear {
+  clear: both;
+}
+
+.ui.medium.left.floated.image.pe-introimg {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.ui.breadcrumb .active.section {
+  font-weight: normal;
+  color: rgba(0,0,0,.7);
+}
+
+ul li p:last-child {
+  margin-bottom: 1em;
+}
+
+/* Manual left pointing vertical menu since it is not available in Semantic < 2.2 yet */
+.ui.vertical.left.pointing.menu .item:after {
+  right: auto;
+  left: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  margin: 0 0 0 -.5px;
+  border: none;
+  border-bottom: 1px solid #D4D4D5;
+  border-left: 1px solid #D4D4D5;
+}
+
+/* Manual left pointing vertical steps */
+.ui.pe-left-pointing-steps.steps .step:after {
+  left: 0;
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(135deg);
+  transform: translateY(-50%) translateX(-50%) rotate(135deg);
+}
+
+.pe-sidebar-menu a {
+  color: #6f6f6f;
+  display: block;
+  border-left: 3px solid #ffffff;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 7px 0px 7px 5px;
+  border-bottom: 1px solid #dedede;
+}
+
+.pe-sidebar-menu a:hover {
+  color: #1e70bf;
+  background-color: #f8f8f8;
+}
+
+.pe-sidebar-menu a.active {
+  color: #4183c4;
+  border-left: 3px solid #848fbd;
+  -webkit-transition: border-left 700ms;
+  transition: border-left 700ms;
+}
+
+.pe-sidebar-menu a.header {
+  font-weight: bold;
+}
+
+#sticky-menu {
+  border-bottom: 1px solid #dedede;
+  font-size: 15px;
+}
+
+#sticky-menu a {
+  font-size: 14px;
+  border-bottom: none;
+  padding-left: 4px;
+}
+
+#sticky-menu a.fragment {
+  padding: 2px 0px 2px 4px;
+}
+
+#sticky-menu a.h1menuitem {
+  font-weight: normal;
+  font-size: 15px;
+  text-indent: -21px;
+  padding: 7px 0 7px 5px;
+  display: block;
+  background-color: #f8f8f8;
+}
+
+#sticky-menu a.h2menuitem {
+  text-indent: -22px;
+  padding-left: 40px;
+  counter-reset: h3menu;
+}
+
+#sticky-menu a.h3menuitem {
+  text-indent: -27px;
+  padding-left: 65px;
+}
+
+#sticky-menu a.h4menuitem {
+  padding-left: 75px;
+}
+
+#sticky-menu a.h2menuitem::before {
+  counter-increment: h2menu;
+  content: counter(h2menu) ".\0000a0\0000a0";
+}
+
+#sticky-menu a.h3menuitem::before {
+  counter-increment: h3menu;
+  content: counter(h2menu) "." counter(h3menu) ".\0000a0\0000a0";
+}
+
+img.pe-grey {
+  filter: grey;
+  -webkit-filter: grayscale(0.8);
+  -webkit-transition: all .3s ease-in-out;
+}
+
+img.pe-grey:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.pe-content .ui.relaxed.divided.items>.item {
+  padding: 2em 0;
+}
