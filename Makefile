@@ -12,3 +12,7 @@ up: ## Get up and running with Jekyll and Docker on localhost
 yarn: ## Run yarn command in a Node.js Docker container
   @test "$(a)"
   docker run -it --rm -v `pwd`:/home/node/app -w /home/node/app node:alpine yarn $(a)
+
+npm: ## Run npm command in a Node.js Docker container
+  @test "$(a)"
+  docker run -it --rm -v `pwd`:/home/node/app -w /home/node/app node:alpine npm $(a)
