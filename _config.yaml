@@ -6,3 +6,13 @@ exclude:
   - package.json
   - yarn.lock
   - LICENSE
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://assets.php.earth/content/phpearth-large.png
